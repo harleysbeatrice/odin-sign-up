@@ -2,10 +2,49 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Sign-Up Page</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
+        <div class="img">
+            <div class="logo">
+                <img src="odin-lined.png" alt="Odin Logo">
+                <p class="logo-text">ODIN</p>
+            </div>
+            <p class="credit">Photo by <a href="https://unsplash.com/@nicknice?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nick Nice</a> on <a href="https://unsplash.com/photos/photo-of-purple-petaled-flowers-DqN0niGVZ1w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+        </div>
+        <div class="main">
+            <div class="main-text">
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo, sem in commodo sodales, orci felis aliquet nulla, in ultricies tellus ipsum vel nulla. Vestibulum ullamcorper feugiat metus, in convallis tortor fringilla quis. Morbi et vehicula metus. Proin pulvinar volutpat ante quis dapibus. </p>
+                <p class="tagline">Duis at nisl magna.</p>
+            </div>
+            <form action="" method="POST">
+                <div class="form-fields">
+                    <h6 class="form-header">Let's do this!</h6>
+                    <p id="name" class="field-cont">
+                        <label for="fname" class="first-name">First Name</label>
+                        <input type="text" name="fname" id="fname">
+                        <label for="lname" class="last-name">Last Name</label>
+                        <input type="text" name="lname" id="lname">
+                    </p>
+                    <p id="comm" class="field-cont">
+                        <label for="email" class="e-mail">E-Mail</label>
+                        <input type="email" name="email" id="email">
+                        <label for="tel-num" class="tel-num">Phone Number</label>
+                        <input type="tel" name="tel-num" id="tel-num">
+                    </p>
+                    <p id="pass" class="field-cont">
+                        <label for="password" class="password">Password</label>
+                        <input type="password" name="password" id="password">
+                        <label for="confirm-password" class="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                    </p>
+                </div>
+                <div class="btn-container">
+                    <button type="Submit">Create Account</button>
+                </div>
+            </form>
+            <p id="account-check">Already have an account? <a href="">Log In</a></p>
+        </div>
     </body>
 </html>

@@ -1,4 +1,140 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
 .img {
     background-image: url(nick-nice-DqN0niGVZ1w-unsplash.jpg);
+    background-size: contain;
     aspect-ratio: 9 / 16;
+    color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 3em;
+    border-top-left-radius: 3em;
+}
+
+.logo {
+    height: 15%;
+    padding: 5%;
+    margin-top:15%;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Iceland;
+    background-color: rgba(0, 0, 0, 0.22);
+}
+
+.logo-text {
+    font-size: 3em;
+    text-align: center;
+}
+
+.credit {
+    text-align: center;
+    font-family: Iceland;
+    width: 70%;
+    padding: 2%;
+    align-self: center;
+}
+
+.img > p > a {
+    color: #e8e8e8;
+}
+
+.credit:hover {
+    background-color: rgba(0, 0, 0, 0.22);
+    border-bottom-left-radius: 3em;
+    border-top-left-radius: 3em;
+}
+
+.main {
+    background-color: #e8e8e8;
+    border-top-right-radius:3em;
+    border-bottom-right-radius:3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*padding: 5%;*/
+    font-family: Montserrat;
+}
+
+.main > * > *:not(a) {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.main-text {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    width: auto;
+    padding-bottom: 1.5%;
+}
+
+.form-fields > h6 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.field-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-bottom: 5%;
+}
+
+.single-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.01rem;
+    padding-right: 10%;
+}
+
+label {
+    font-size: 0.75em;
+}
+
+input {
+    border-radius:0.5em;
+    padding: 0.2em;
+    padding-left:0.4em;
+    padding-right:0.4em;
+    border:1px solid #626060;
+}
+
+input:focus {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.11);
+    border:2px solid #2e2ea1;
+}
+
+button {
+    font-family: Montserrat;
+    font-size: 1.1em;
+    padding: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 0.5em;
+    background-color: #8343b7;
+    color: #f3f3f3;
+    border:none;
+    margin-top: 3%;
+}
+
+button:hover {
+    background-color: #672391;
+}
+
+#password:invalid #confirm-password:invalid {
+    border-color: darkred;
+}
+#account-check {
+    padding-left:5%;
+    padding-right:5%;
 }

@@ -4,6 +4,13 @@
         <meta charset="UTF-8">
         <title>Sign-Up Page</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+
     </head>
     <body>
         <div class="img">
@@ -21,24 +28,36 @@
             <form action="" method="POST">
                 <div class="form-fields">
                     <h6 class="form-header">Let's do this!</h6>
-                    <p id="name" class="field-cont">
-                        <label for="fname" class="first-name">First Name</label>
-                        <input type="text" name="fname" id="fname">
-                        <label for="lname" class="last-name">Last Name</label>
-                        <input type="text" name="lname" id="lname">
-                    </p>
-                    <p id="comm" class="field-cont">
-                        <label for="email" class="e-mail">E-Mail</label>
-                        <input type="email" name="email" id="email">
-                        <label for="tel-num" class="tel-num">Phone Number</label>
-                        <input type="tel" name="tel-num" id="tel-num">
-                    </p>
-                    <p id="pass" class="field-cont">
-                        <label for="password" class="password">Password</label>
-                        <input type="password" name="password" id="password">
-                        <label for="confirm-password" class="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
-                    </p>
+                    <div id="name" class="field-cont">
+                        <div class="single-field">
+                            <label for="fname" class="first-name">First Name</label>
+                            <input type="text" name="fname" id="fname">
+                        </div>
+                        <div class="single-field">
+                            <label for="lname" class="last-name">Last Name</label>
+                            <input type="text" name="lname" id="lname">
+                        </div>
+                    </div>
+                    <div id="comm" class="field-cont">
+                        <div class="single-field">
+                            <label for="email" class="e-mail">E-Mail</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="single-field">
+                            <label for="tel-num" class="tel-num">Phone Number</label>
+                            <input type="tel" name="tel-num" id="tel-num">
+                        </div>
+                    </div>
+                    <div id="pass" class="field-cont">
+                        <div class="single-field">
+                            <label for="password" class="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="single-field">
+                            <label for="confirm-password" class="confirm-password">Confirm Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password">
+                        </div>
+                    </div>
                 </div>
                 <div class="btn-container">
                     <button type="Submit">Create Account</button>

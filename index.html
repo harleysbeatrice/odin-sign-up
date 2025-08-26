@@ -30,34 +30,35 @@
                     <h6 class="form-header">Let's do this!</h6>
                     <div id="name" class="field-cont">
                         <div class="single-field">
-                            <label for="fname" class="first-name">First Name</label>
-                            <input type="text" name="fname" id="fname">
+                            <label for="fname" class="first-name">First Name*</label>
+                            <input type="text" name="fname" id="fname" required>
                         </div>
                         <div class="single-field">
-                            <label for="lname" class="last-name">Last Name</label>
-                            <input type="text" name="lname" id="lname">
+                            <label for="lname" class="last-name">Last Name*</label>
+                            <input type="text" name="lname" id="lname" required>
                         </div>
                     </div>
                     <div id="comm" class="field-cont">
                         <div class="single-field">
-                            <label for="email" class="e-mail">E-Mail</label>
-                            <input type="email" name="email" id="email">
+                            <label for="email" class="e-mail">E-Mail*</label>
+                            <input type="email" name="email" id="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Please enter a valid email address" required>
                         </div>
                         <div class="single-field">
                             <label for="tel-num" class="tel-num">Phone Number</label>
-                            <input type="tel" name="tel-num" id="tel-num">
+                            <input type="tel" name="tel-num" id="tel-num" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please enter a valid telephone number">
                         </div>
                     </div>
                     <div id="pass" class="field-cont">
                         <div class="single-field">
-                            <label for="password" class="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <label for="password" class="password">Password*</label>
+                            <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                         </div>
                         <div class="single-field">
-                            <label for="confirm-password" class="confirm-password">Confirm Password</label>
-                            <input type="password" name="confirm-password" id="confirm-password">
+                            <label for="confirm-password" class="confirm-password">Confirm Password*</label>
+                            <input type="password" name="confirm-password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                         </div>
                     </div>
+                    <p class="req">* Required</p>
                 </div>
                 <div class="btn-container">
                     <button type="Submit">Create Account</button>

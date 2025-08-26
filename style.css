@@ -56,7 +56,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*padding: 5%;*/
     font-family: Montserrat;
 }
 
@@ -76,6 +75,7 @@ body {
     background-color: #f3f3f3;
     width: auto;
     padding-bottom: 1.5%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .form-fields > h6 {
@@ -111,7 +111,12 @@ input {
 
 input:focus {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.11);
-    border:2px solid #2e2ea1;
+    border: 3px solid #8343b7;
+    outline: none;
+}
+
+input:invalid {
+    border:3px solid red;
 }
 
 button {
@@ -131,10 +136,20 @@ button:hover {
     background-color: #672391;
 }
 
+button:active {
+    background-color: #471565;
+}
+
 #password:invalid #confirm-password:invalid {
     border-color: darkred;
 }
 #account-check {
     padding-left:5%;
     padding-right:5%;
+}
+
+.req {
+    font-family: Montserrat;
+    font-size: 12px;
+    color: dimgrey;
 }
